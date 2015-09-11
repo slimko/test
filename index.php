@@ -4,6 +4,6 @@
  </head>
  <body>
  <h1>xaver.loc</h1>
- <?php echo 'проверка PHP - работает!';?>
+ <?php echo 'проверка PHP - работает!!!';?>
  </body>
 </html>
