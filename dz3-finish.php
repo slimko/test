@@ -19,21 +19,22 @@ echo '<h3>2. C помощью генератора случайных чисел
 
 function arr_date($date){
 	return $dat[] = rand(1, time());
-	//return $dat[$date] = date('d m Y', $date);
-	//$dat[$date] = rand(1, time());
-	//echo '<br>';
 }
+
 $date=array_map('arr_date',$date);
+
 echo '<pre>';
 print_r($date); 
 echo '</pre>';
 
 echo '<h3>3. Сделайте вывод сообщения на экран о том, какой день в сгенерированном массиве получился наименьшим, а какой месяц наибольшим</h3>';
+
 //прогоняем  через функцию временную метку
 function dateTod($timestamp){
 	return $day[] = idate('d', $timestamp);
 }
 $day=array_map('dateTod',$date); //получаем данные в массив day
+
 //выводим наименьший день
 echo 'Наименьший в сгенерированном массиве день - '.min($day);
 echo '<br>';
@@ -42,7 +43,9 @@ echo '<br>';
 function dateToMonth($timestamp){
 	return $day[] = date('F', $timestamp);
 }
+
 $month=array_map('dateToMonth',$date); //получаем данные в массив day
+
 echo 'Наибольший в сгенерированном массиве месяц - '.max($month);
  
 echo '<h3>4. Отсортируйте массив по возрастанию дат</h3>';
