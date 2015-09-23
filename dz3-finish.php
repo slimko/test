@@ -41,7 +41,7 @@ echo '<br>';
 
 //прогоняем  через функцию временную метку
 function dateToMonth($timestamp){
-	return $day[] = date('F', $timestamp);
+	return $day[] = date('m', $timestamp);
 }
 
 $month=array_map('dateToMonth',$date); //получаем данные в массив day
