@@ -42,7 +42,7 @@ function parse_bd3($param) {
 		else{
 			echo '<li>';
 			echo $k;
-			echo '-'.$v;
+			echo '--'.$v;
 			echo '</li>';
 		}
 
