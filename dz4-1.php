@@ -94,6 +94,7 @@ function parse_product($k,$v){
 			$product_sklad=$v;
 			if($product_quantity>$product_sklad){ 
 				$v=$v."<br>На складе не хватает товара";
+				$product_quantity=$v;
 			}
 			break;
 		case 'diskont':
@@ -154,7 +155,7 @@ echo '<table border="1" style="border:1px solid black;" cellpadding="10" cellspa
 print_basket($bd2); //вызываем функцию вывода корзины - вставляем ячейки
 echo '</tbody></table>';
 
-echo '<h2>Общая сумма вашего заказа:  '.$general_total_price.' </h2>'; //общая цена
+echo '<h2>Общая сумма вашего заказа (ПРИСУТСТВУЮЩЕГО НА СКЛАДЕ):  '.$general_total_price.' </h2>'; //общая цена
 
 
 
