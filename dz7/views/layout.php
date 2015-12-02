@@ -5,7 +5,7 @@
 		<link href="./style.css" rel="stylesheet">
 	</head>
 	<body>
-		<?php include "./form.php";?>
+		<?php include "./views/form.php";?>
 		<h2>Объявления:</h2>
 		<?php show_ads($params['bd']); //выводим объявления ?>
 	</body>
