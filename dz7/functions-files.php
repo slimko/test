@@ -1,4 +1,7 @@
 <?php
+function template($templateName,$params){
+   include_once($templateName);
+}
 //проверяем наличие кук на объявления, если есть, то записываем все в переменную $bd
 function getBD(){
     $filename='./base.html';
@@ -6,10 +9,8 @@ function getBD(){
             echo "не могу создать и открыть файл";
             exit;
         }
-        //$content = fread($file,filesize($filename));
         if ($content=file_get_contents($filename)){
             $bd = json_decode($content, true);
-            echo 'читаем';
         }
         else{
             $bd = null; 
