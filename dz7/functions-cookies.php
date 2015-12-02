@@ -1,4 +1,7 @@
 <?php
+function template($templateName,$params){
+   include_once($templateName);
+}
 //проверяем наличие кук на объявления, если есть, то записываем все в переменную $bd
 function getBD(){
     if(isset($_COOKIE['ads'])){
