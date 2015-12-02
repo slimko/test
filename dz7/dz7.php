@@ -3,15 +3,43 @@
  * 1) dz6_1.php Сохранять объявления в Cookie и выставить время жизни - неделю
    2) dz6_2.php Сохранять объявления в файлах
  */
-require_once 'array.php'; //подключаем базу данных
-require_once 'functions.php'; //подключаем функции
+require_once './array.php'; //подключаем базу данных
+require_once './functions-files.php'; //подключаем функции для сохранения в файлы
+//require_once './functions-cookies.php'; //подключаем функции для сохранения в куки
+
+$bd = getBD();//получаем данные из БД
+//print_r($bd);
+//проверяем массив пост и добавляем в бд
+if($_POST){
+	echo $_POST['id'];
+    if($_POST['id']>='0'){ //проверяем наличие id у формы
+        $i=$_POST['id'];
+        var_dump($bd);
+        $bd[$i]=$_POST;//помещаем данные из формы в переменную
+    }   
+    else{
+        $bd[]=$_POST;//помещаем данные из формы в бд
+        echo "создаем новую переменную";
+    }
+    postBD($bd); //помещаем в базу данных
+}
+//проверяем гет id, если его нет заполняем форму пыстыми значениями
+if(isset($_GET['id']) and !empty($bd[$_GET['id']])){
+    $id=$_GET['id'];
+    $form_bd = $bd[$id];
+    $form_bd['id'] = $id;
+    var_dump($form_bd);
+}
+else{
+    $form_bd = array('private' => 0,'name' =>'','email' =>'','phone' =>'','city' =>'','cat' =>'','title' =>'','description' =>'','price' =>'','id' =>'');
+}
 
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<link href="style.css" rel="stylesheet">
+	<link href="./style.css" rel="stylesheet">
 </head>
 <body>
 <!--форма для добавления -->
@@ -55,6 +83,6 @@ require_once 'functions.php'; //подключаем функции
     <div class="wrapper"><button type="submit">Отправить</button><button type="reset">Очистить</button></div>
 </form>
 <h2>Объявления:</h2>
-<?php show_ads(); //выводим объявления ?>
+<?php show_ads($bd); //выводим объявления ?>
 </body>
 </html>
