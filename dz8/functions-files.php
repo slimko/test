@@ -19,4 +19,18 @@ function postBD($bd){
     $bd = json_encode($bd);
     file_put_contents('./base.html', $bd);
 }
+
+function clear_post($val){
+    var_dump($val);
+    if(is_array($val)){
+        foreach ($val as $key => $value) {
+            $result[$key]=htmlentities($value, ENT_QUOTES);
+        }
+    }
+    else{
+        $result=htmlentities($val, ENT_QUOTES);
+    }
+    return $result;  
+}
+
 ?>
