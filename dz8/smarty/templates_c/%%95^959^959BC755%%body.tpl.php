@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.28, created on 2015-12-15 00:15:32
+<?php /* Smarty version 2.6.28, created on 2015-12-22 00:01:08
          compiled from body.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'body.tpl', 3, false),array('function', 'html_radios', 'body.tpl', 5, false),array('function', 'html_options', 'body.tpl', 17, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'body.tpl', 3, false),array('modifier', 'escape', 'body.tpl', 36, false),array('function', 'html_radios', 'body.tpl', 5, false),array('function', 'html_options', 'body.tpl', 17, false),)), $this); ?>
 
 <form action="dz8.php" method="post" class="contact_form"> 
 		<input type="hidden"  name="id"  value="<?php echo ((is_array($_tmp=@$this->_tpl_vars['form_param']['id'])) ? $this->_run_mod_handler('default', true, $_tmp, '') : smarty_modifier_default($_tmp, '')); ?>
@@ -17,7 +17,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '
 	    <label for="email" class="input_name_label">Электронная почта</label>
 	        <input type="text" name="email" id="email" class="input_text" value="<?php echo ((is_array($_tmp=@$this->_tpl_vars['form_param']['email'])) ? $this->_run_mod_handler('default', true, $_tmp, '') : smarty_modifier_default($_tmp, '')); ?>
 "><br>
-	    	    <label><input type="checkbox" name="allow_mails" value="1" <?php if ($this->_tpl_vars['form_param']['allow_mails'] == '1'): ?>checked<?php endif; ?>>Я не хочу получать вопросы по объявлению по e-mail</label>
+	    	    <label><input type="checkbox" name="allow_mails" value="1" <?php if ($this->_tpl_vars['form_param']['allow_mails'] == '1'): ?>checked<?php endif; ?>>Я не хочу получать вопросы по объявлению на e-mail</label>
 	    <label for="fld_phone" class="input_name_label">Номер телефона</label> 
 	        <input type="text" class="input_text" name="phone" id="fld_phone" value="<?php echo ((is_array($_tmp=@$this->_tpl_vars['form_param']['phone'])) ? $this->_run_mod_handler('default', true, $_tmp, '') : smarty_modifier_default($_tmp, '')); ?>
 "><br>
@@ -50,8 +50,8 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '
 ?>
 		<li><?php echo $this->_tpl_vars['nameValue']; ?>
 . <a href="?id=<?php echo $this->_tpl_vars['nameValue']; ?>
-"><?php echo $this->_tpl_vars['Value']['title']; ?>
-</a> | <?php echo $this->_tpl_vars['Value']['price']; ?>
+"><?php echo ((is_array($_tmp=$this->_tpl_vars['Value']['title'])) ? $this->_run_mod_handler('escape', true, $_tmp, 'htmlall', 'UTF-8') : smarty_modifier_escape($_tmp, 'htmlall', 'UTF-8')); ?>
+</a> | <?php echo ((is_array($_tmp=$this->_tpl_vars['Value']['price'])) ? $this->_run_mod_handler('escape', true, $_tmp, 'htmlall') : smarty_modifier_escape($_tmp, 'htmlall')); ?>
  руб. | <a href="?del=<?php echo $this->_tpl_vars['nameValue']; ?>
 ">удалить</a></li>
 		<?php endforeach; else: ?>

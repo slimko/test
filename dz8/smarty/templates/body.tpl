@@ -33,7 +33,7 @@
 	{* выводим объявления *}
 	<ul>
 	{foreach from=$bd key=nameValue item=Value }
-		<li>{$nameValue}. <a href="?id={$nameValue}">{$Value.title}</a> | {$Value.price} руб. | <a href="?del={$nameValue}">удалить</a></li>
+		<li>{$nameValue}. <a href="?id={$nameValue}">{$Value.title|escape:htmlall:'UTF-8'}</a> | {$Value.price|escape:htmlall:'UTF-8'} руб. | <a href="?del={$nameValue}">удалить</a></li>
 		{foreachelse}
 		<p>Вы еще не добавили объявлений</p>
 	{/foreach}

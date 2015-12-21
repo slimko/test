@@ -24,13 +24,21 @@ function clear_post($val){
     var_dump($val);
     if(is_array($val)){
         foreach ($val as $key => $value) {
-            $result[$key]=htmlentities($value, ENT_QUOTES);
+            //$result[$key]=htmlentities($value, ENT_QUOTES);
+            $input_text = trim($value);
+            $result[$key] = htmlspecialchars($input_text);
+            //$result[$key] = mysql_escape_string($input_text);
         }
     }
     else{
-        $result=htmlentities($val, ENT_QUOTES);
+        //$result=htmlentities($val, ENT_QUOTES);
+        $input_text = trim($val);
+        $result = htmlspecialchars($input_text);
+        //$result = mysql_escape_string($input_text);
     }
     return $result;  
 }
+
+
 
 ?>
