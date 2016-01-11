@@ -21,16 +21,7 @@ $DBconf=getCONF();
  * устанавливаем соединение с БД
  */
 
-$dsn = "mysql:host={$DBconf['server_name']};dbname={$DBconf['database']};charset=utf8";
-$opt = array(
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-);
-$pdo = new PDO($dsn,$DBconf['user_name'], $DBconf['password'], $opt);
-
-
-// Устанавливаем соединение.
-$DB = DbSimple_Generic::connect("mysql://root:root@localhost/dz9-markov-pdo");
+$DB = DbSimple_Generic::connect("mysql://{$DBconf['user_name']}:{$DBconf['password']}@{$DBconf['server_name']}/{$DBconf['database']}");
 // Дальше работаем с соединением (или текущей транзакцией) $DB.
 
 // Устанавливаем обработчик ошибок.
@@ -48,7 +39,7 @@ function databaseErrorHandler($message, $info){
     echo "</pre>";
     exit();
 }
-//фонкция логирования запросов
+//функция логирования запросов
 function myLogger($db, $sql)
 {
     // Находим контекст вызова этого запроса.

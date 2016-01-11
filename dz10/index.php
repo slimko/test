@@ -58,9 +58,9 @@ if($_POST){
             updateBD($DB,$result,$_POST['id']); //отправляем в базу данных на обновление
         }
         else{
-            $post = array_diff($_POST, array(null)); // удалим id с пустым значением
-            $result = array_merge ($form, $post);
-            postBD($DB,$result); //отправляем данные в базу данных
+            unset($_POST['id']); //вырезаем id
+            var_dump($_POST);
+            postBD($DB,$_POST); //отправляем данные в базу данных
         }
 
     }
