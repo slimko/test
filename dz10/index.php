@@ -46,12 +46,12 @@ $smarty->template_dir = $smarty_dir.'templates';
 $smarty->compile_dir = $smarty_dir.'templates_c';
 $smarty->cache_dir = $smarty_dir.'cache';
 $smarty->config_dir = $smarty_dir.'configs';
-
+//дефолтные значения для формы
+$form= array("name"=>"","email"=>"","phone"=>"","title_ad"=>"","price"=>null,"description"=>"","city"=>NULL,"cat"=>NULL,"private"=>null,"allow_mails"=>NULL);
 
 //проверяем массив пост и добавляем в бд
 if($_POST){
-    $form= array("name"=>"","email"=>"","phone"=>"","title_ad"=>"","price"=>null,"description"=>"","city"=>NULL,"cat"=>NULL,"private"=>null,"allow_mails"=>NULL);
-    if(is_numeric($_POST['price'])){
+     if(is_numeric($_POST['price'])){
         if($_POST['id']){ //проверяем наличие id у формы
             $result = array_replace ($form, $_POST);
             unset($result['id']); //вырезаем id
@@ -59,14 +59,12 @@ if($_POST){
         }
         else{
             unset($_POST['id']); //вырезаем id
-            var_dump($_POST);
             postBD($DB,$_POST); //отправляем данные в базу данных
         }
 
     }
     else{
-        $params['form_bd']=$_POST;
-        $smarty->assign('form_param', $params['form_bd']);
+        $smarty->assign('form_param',$_POST);
         $smarty->assign('price_error', 'Введите корректную сумму!');
     }
 }
@@ -76,17 +74,14 @@ if(isset($_GET['del'])){
 }
 
 $params = getDataBD($DB);//получаем объявления и данные для формы из БД
-//проверяем гет id, если его нет заполняем форму пыстыми значениями
-if(isset($_GET['id']) and !empty($params['bd'][$_GET['id']])){
-    $id=$_GET['id'];
-    $params['form_bd'] = $params['bd'][$id];
-    $params['form_bd']['id'] = $id;
 
-    $smarty->assign('form_param', $params['form_bd']);
+//проверяем гет id, если есть, то выводим на редактирование объявление
+if(isset($_GET['id']) and !empty($params['bd'][$_GET['id']])){
+    $smarty->assign('form_param', $params['bd'][$_GET['id']]);
 }
 
 // далее настраиваем вывод
-$smarty->assign('title', 'Домашнее задание №9');
+$smarty->assign('title', 'Домашнее задание №10');
 $smarty->assign('bd', $params['bd']);
 $smarty->assign('options_city',$params['city']);
 $smarty->assign('options_cat',$params['cat']);
