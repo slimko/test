@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7230ecf7-fb1a-4fb6-b16a-9c55a5cd0467" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/.idea/dz10.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/FirePHPCore/FirePHP.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/FirePHPCore/FirePHP.class.php4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/FirePHPCore/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/FirePHPCore/fb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/FirePHPCore/fb.php4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/base-setup.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/base.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/dbsimple/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/dbsimple/DbSimple/Generic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/dbsimple/DbSimple/Ibase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/dbsimple/DbSimple/Mysql.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/dbsimple/DbSimple/Postgresql.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/dbsimple/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/debug.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/functions-files.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/install.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/QUICK_START" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/Config_File.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/Smarty.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/Smarty_Compiler.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/debug.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.assemble_plugin_filepath.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.assign_smarty_interface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.create_dir_structure.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.display_debug_console.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.get_include_path.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.get_microtime.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.get_php_resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.is_secure.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.is_trusted.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.load_plugins.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.load_resource_plugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.process_cached_inserts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.process_compiled_include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.read_cache_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.rm_auto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.rmdir.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.run_insert_handler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.smarty_include_php.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.write_cache_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.write_compiled_include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.write_compiled_resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/internals/core.write_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/block.textformat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/compiler.assign.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.assign_debug_info.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.config_load.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.counter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.cycle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.debug.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.eval.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.fetch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.html_checkboxes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.html_image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.html_options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.html_radios.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.html_select_date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.html_select_time.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.html_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.mailto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.math.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.popup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/function.popup_init.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.capitalize.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.cat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.count_characters.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.count_paragraphs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.count_sentences.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.count_words.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.date_format.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.debug_print_var.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.escape.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.indent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.lower.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.nl2br.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.regex_replace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.replace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.spacify.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.string_format.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.strip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.strip_tags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.truncate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.upper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/modifier.wordwrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/outputfilter.trimwhitespace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/shared.escape_special_chars.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/libs/plugins/shared.make_timestamp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates/body.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates/footer.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates/header.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates_c/%%0E^0E4^0E407559%%footer.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates_c/%%3C^3CB^3CB46C1C%%header_mobile.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates_c/%%45^45E^45E480CD%%index.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates_c/%%4D^4D2^4D222FFD%%debug.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates_c/%%7E^7E1^7E18F0EE%%dz8.conf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates_c/%%95^959^959BC755%%body.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates_c/%%AD^AD1^AD1C9CF3%%debug.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/smarty/templates_c/%%F7^F7F^F7F34188%%header.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz10/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz3-finish.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz4-1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz5-GET.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz5-POST.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz6/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz6/array.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz6/dz6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz7/array.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz7/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz7/dz7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz7/functions-cookies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz7/functions-files.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz7/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz7/views/form.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz7/views/layout.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/array.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/dz8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/functions-files.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/QUICK_START" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/configs/dz8.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/configs/test.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/Config_File.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/Smarty.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/Smarty_Compiler.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/debug.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.assemble_plugin_filepath.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.assign_smarty_interface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.create_dir_structure.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.display_debug_console.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.get_include_path.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.get_microtime.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.get_php_resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.is_secure.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.is_trusted.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.load_plugins.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.load_resource_plugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.process_cached_inserts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.process_compiled_include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.read_cache_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.rm_auto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.rmdir.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.run_insert_handler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.smarty_include_php.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.write_cache_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.write_compiled_include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.write_compiled_resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/internals/core.write_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/block.textformat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/compiler.assign.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.assign_debug_info.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.config_load.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.counter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.cycle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.debug.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.eval.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.fetch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.html_checkboxes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.html_image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.html_options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.html_radios.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.html_select_date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.html_select_time.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.html_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.mailto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.math.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.popup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/function.popup_init.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.capitalize.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.cat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.count_characters.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.count_paragraphs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.count_sentences.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.count_words.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.date_format.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.debug_print_var.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.escape.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.indent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.lower.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.nl2br.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.regex_replace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.replace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.spacify.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.string_format.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.strip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.strip_tags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.truncate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.upper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/modifier.wordwrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/outputfilter.trimwhitespace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/shared.escape_special_chars.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/libs/plugins/shared.make_timestamp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates/body.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates/footer.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates/header.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates_c/%%0E^0E4^0E407559%%footer.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates_c/%%3C^3CB^3CB46C1C%%header_mobile.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates_c/%%45^45E^45E480CD%%index.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates_c/%%4D^4D2^4D222FFD%%debug.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates_c/%%7E^7E1^7E18F0EE%%dz8.conf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates_c/%%95^959^959BC755%%body.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates_c/%%AD^AD1^AD1C9CF3%%debug.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/smarty/templates_c/%%F7^F7F^F7F34188%%header.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz8/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/.idea/dz9.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/base-setup.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/base.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/base-setup.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/base.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/functions-files.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/install.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/QUICK_START" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/Config_File.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/Smarty.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/Smarty_Compiler.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/debug.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.assemble_plugin_filepath.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.assign_smarty_interface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.create_dir_structure.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.display_debug_console.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.get_include_path.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.get_microtime.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.get_php_resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.is_secure.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.is_trusted.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.load_plugins.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.load_resource_plugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.process_cached_inserts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.process_compiled_include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.read_cache_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.rm_auto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.rmdir.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.run_insert_handler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.smarty_include_php.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.write_cache_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.write_compiled_include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.write_compiled_resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/internals/core.write_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/block.textformat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/compiler.assign.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.assign_debug_info.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.config_load.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.counter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.cycle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.debug.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.eval.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.fetch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.html_checkboxes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.html_image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.html_options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.html_radios.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.html_select_date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.html_select_time.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.html_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.mailto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.math.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.popup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/function.popup_init.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.capitalize.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.cat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.count_characters.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.count_paragraphs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.count_sentences.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.count_words.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.date_format.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.debug_print_var.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.escape.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.indent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.lower.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.nl2br.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.regex_replace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.replace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.spacify.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.string_format.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.strip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.strip_tags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.truncate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.upper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/modifier.wordwrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/outputfilter.trimwhitespace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/shared.escape_special_chars.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/libs/plugins/shared.make_timestamp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates/body.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates/footer.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates/header.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates_c/%%0E^0E4^0E407559%%footer.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates_c/%%3C^3CB^3CB46C1C%%header_mobile.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates_c/%%45^45E^45E480CD%%index.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates_c/%%4D^4D2^4D222FFD%%debug.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates_c/%%7E^7E1^7E18F0EE%%dz8.conf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates_c/%%95^959^959BC755%%body.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates_c/%%AD^AD1^AD1C9CF3%%debug.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/smarty/templates_c/%%F7^F7F^F7F34188%%header.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/dz9-pdo/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/functions-files.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/install.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/QUICK_START" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/Config_File.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/Smarty.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/Smarty_Compiler.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/debug.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.assemble_plugin_filepath.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.assign_smarty_interface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.create_dir_structure.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.display_debug_console.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.get_include_path.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.get_microtime.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.get_php_resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.is_secure.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.is_trusted.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.load_plugins.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.load_resource_plugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.process_cached_inserts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.process_compiled_include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.read_cache_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.rm_auto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.rmdir.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.run_insert_handler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.smarty_include_php.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.write_cache_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.write_compiled_include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.write_compiled_resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/internals/core.write_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/block.textformat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/compiler.assign.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.assign_debug_info.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.config_load.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.counter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.cycle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.debug.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.eval.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.fetch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.html_checkboxes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.html_image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.html_options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.html_radios.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.html_select_date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.html_select_time.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.html_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.mailto.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.math.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.popup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/function.popup_init.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.capitalize.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.cat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.count_characters.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.count_paragraphs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.count_sentences.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.count_words.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.date_format.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.debug_print_var.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.escape.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.indent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.lower.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.nl2br.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.regex_replace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.replace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.spacify.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.string_format.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.strip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.strip_tags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.truncate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.upper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/modifier.wordwrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/outputfilter.trimwhitespace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/shared.escape_special_chars.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/libs/plugins/shared.make_timestamp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates/body.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates/footer.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates/header.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates/index.tpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates_c/%%0E^0E4^0E407559%%footer.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates_c/%%3C^3CB^3CB46C1C%%header_mobile.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates_c/%%45^45E^45E480CD%%index.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates_c/%%4D^4D2^4D222FFD%%debug.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates_c/%%7E^7E1^7E18F0EE%%dz8.conf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates_c/%%95^959^959BC755%%body.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates_c/%%AD^AD1^AD1C9CF3%%debug.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/smarty/templates_c/%%F7^F7F^F7F34188%%header.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dz9/style.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+    </list>
+    <ignored path="dz11.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="dz11" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="View.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/View.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.0">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <marker date="1454351285232" expanded="true" signature="425:479" placeholder="SELECT id AS... city" />
+                <marker date="1454351285232" expanded="true" signature="524:676" placeholder="SELECT t1.na... category" />
+                <marker date="1454351285232" expanded="true" signature="717:823" placeholder="SELECT id AS... ad" />
+                <marker date="1454351285232" expanded="true" signature="980:1009" placeholder="INSERT INTO ad... " />
+                <marker date="1454351285232" expanded="true" signature="1190:1221" placeholder="UPDATE ad SE... " />
+                <marker date="1454351285232" expanded="true" signature="1343:1368" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="installView.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/installView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+              <folding>
+                <marker date="1454394753591" expanded="true" signature="593:630" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrontController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/FrontController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="install.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/install.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseConnection.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/DatabaseConnection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="149" selection-start-line="10" selection-start-column="149" selection-end-line="10" selection-end-column="149" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/index.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09342561">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/header.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="56" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="body.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/body.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/functions-files.php" />
+        <option value="$PROJECT_DIR$/index2.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/application/views/index.tpl" />
+        <option value="$PROJECT_DIR$/application/views/header.tpl" />
+        <option value="$PROJECT_DIR$/application/views/body.tpl" />
+        <option value="$PROJECT_DIR$/application/controllers/FrontController.php" />
+        <option value="$PROJECT_DIR$/application/models/View.php" />
+        <option value="$PROJECT_DIR$/application/models/installView.php" />
+        <option value="$PROJECT_DIR$/application/models/DatabaseConnection.php" />
+        <option value="$PROJECT_DIR$/application/views/install.tpl" />
+        <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/base.conf" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-3" />
+    <option name="width" value="1372" />
+    <option name="height" value="733" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dz11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dz11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dz11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dz11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dz11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7230ecf7-fb1a-4fb6-b16a-9c55a5cd0467" name="Default" comment="" />
+      <created>1453675039825</created>
+      <option name="number" value="Default" />
+      <updated>1453675039825</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-3" y="0" width="1372" height="733" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18081991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18081991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1454351285232" expanded="true" signature="425:479" placeholder="SELECT id AS... city" />
+            <marker date="1454351285232" expanded="true" signature="524:676" placeholder="SELECT t1.na... category" />
+            <marker date="1454351285232" expanded="true" signature="717:823" placeholder="SELECT id AS... ad" />
+            <marker date="1454351285232" expanded="true" signature="980:1009" placeholder="INSERT INTO ad... " />
+            <marker date="1454351285232" expanded="true" signature="1190:1221" placeholder="UPDATE ad SE... " />
+            <marker date="1454351285232" expanded="true" signature="1343:1368" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/body.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="71" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <marker date="1454394753591" expanded="true" signature="593:630" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1454351285232" expanded="true" signature="425:479" placeholder="SELECT id AS... city" />
+            <marker date="1454351285232" expanded="true" signature="524:676" placeholder="SELECT t1.na... category" />
+            <marker date="1454351285232" expanded="true" signature="717:823" placeholder="SELECT id AS... ad" />
+            <marker date="1454351285232" expanded="true" signature="980:1009" placeholder="INSERT INTO ad... " />
+            <marker date="1454351285232" expanded="true" signature="1190:1221" placeholder="UPDATE ad SE... " />
+            <marker date="1454351285232" expanded="true" signature="1343:1368" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <marker date="1454394753591" expanded="true" signature="593:630" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DatabaseConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1454351285232" expanded="true" signature="425:479" placeholder="SELECT id AS... city" />
+            <marker date="1454351285232" expanded="true" signature="524:676" placeholder="SELECT t1.na... category" />
+            <marker date="1454351285232" expanded="true" signature="717:823" placeholder="SELECT id AS... ad" />
+            <marker date="1454351285232" expanded="true" signature="980:1009" placeholder="INSERT INTO ad... " />
+            <marker date="1454351285232" expanded="true" signature="1190:1221" placeholder="UPDATE ad SE... " />
+            <marker date="1454351285232" expanded="true" signature="1343:1368" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DatabaseConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1454351285232" expanded="true" signature="425:479" placeholder="SELECT id AS... city" />
+            <marker date="1454351285232" expanded="true" signature="524:676" placeholder="SELECT t1.na... category" />
+            <marker date="1454351285232" expanded="true" signature="717:823" placeholder="SELECT id AS... ad" />
+            <marker date="1454351285232" expanded="true" signature="980:1009" placeholder="INSERT INTO ad... " />
+            <marker date="1454351285232" expanded="true" signature="1190:1221" placeholder="UPDATE ad SE... " />
+            <marker date="1454351285232" expanded="true" signature="1343:1368" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions-files.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions-files.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5605536">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions-files.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43598616">
+          <caret line="14" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46712804">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dbsimple/DbSimple/Generic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5657439">
+          <caret line="1277" column="23" selection-start-line="1277" selection-start-column="23" selection-end-line="1277" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/body.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/installView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1454351285232" expanded="true" signature="425:479" placeholder="SELECT id AS... city" />
+            <marker date="1454351285232" expanded="true" signature="524:676" placeholder="SELECT t1.na... category" />
+            <marker date="1454351285232" expanded="true" signature="717:823" placeholder="SELECT id AS... ad" />
+            <marker date="1454351285232" expanded="true" signature="980:1009" placeholder="INSERT INTO ad... " />
+            <marker date="1454351285232" expanded="true" signature="1190:1221" placeholder="UPDATE ad SE... " />
+            <marker date="1454351285232" expanded="true" signature="1343:1368" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DatabaseConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="149" selection-start-line="10" selection-start-column="149" selection-end-line="10" selection-end-column="149" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding>
+            <marker date="1454394753591" expanded="true" signature="593:630" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/install.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="86" selection-start-line="0" selection-start-column="86" selection-end-line="0" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09342561">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
