@@ -15,4 +15,5 @@ function __autoload($class){
 }
 $front = FrontController::getInstance();
 $front->route(); //разруливает
-echo $front->getBody();// выводит страницу
+
+echo $front->getBody();// выводит всю страницу

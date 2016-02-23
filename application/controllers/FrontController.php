@@ -37,7 +37,7 @@ class FrontController {
 		if(class_exists($this->getController())){
 			$rc = new ReflectionClass($this->getController());
 			if($rc->hasMethod($this->getAction())){
-				$controller = $rc->newInstance();
+				$controller = $rc->newInstance($_POST);
 				$method = $rc->getMethod($this->getAction());
 				$method->invoke($controller);
 
