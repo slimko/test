@@ -12,19 +12,19 @@ class FrontController {
 		//собираем массив с url
 		$splits = explode ('/',trim($request,'/'));
 		//выбор контроллера
-		$this->_controller = 'IndexController'; // выбираем контроллер. (код для расширения функционала - !empty($splits[0])?ucfirst($splits[0]).'Controller':)
+		$this->_controller = !empty($splits[0])?ucfirst($splits[0]).'Controller':'IndexController'; // выбираем контроллер. (код для расширения функционала - !empty($splits[0])?ucfirst($splits[0]).'Controller':)
 		//выбор метода
-		$this->_action = !empty($splits[0])?$splits[0].'Action':'indexAction';
+		$this->_action = !empty($splits[1])?$splits[1].'Action':'indexAction';
 		//параметры
-		if(!empty($splits[1])){
+		if(!empty($splits[2])){
 			$keys = $values = array();
-			for ($i=1,$cnt=count($splits);$i<$cnt;$i++){
+			for ($i=2,$cnt=count($splits);$i<$cnt;$i++){
 				if($i%2==0)
 					//Четное = ключ (параметр)
-					$values[]=$splits[$i];
+					$keys[]=$splits[$i];
 				else
 					//Значение параметра
-					$keys[]=$splits[$i];
+					$values[]=$splits[$i];
 			}
 			if($keys and $values !=NULL){
 				$this->_params = array_combine($keys,$values);

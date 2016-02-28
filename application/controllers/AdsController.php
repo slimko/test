@@ -33,7 +33,7 @@ class AdsController{
 
     //функция обновляет и постит в базу данные из формы
     function postAds(){
-        $ViewModels = new View(); //инициализируем модель
+        $ViewModels = new Ads(); //инициализируем модель
         if($this->id != null){ //проверяем наличие id у формы
             $ViewModels->updateBD($this->getFormParams(),$this->id); //отправляем в базу данных на обновление
         }
@@ -43,7 +43,7 @@ class AdsController{
     }
     //функция удаляет данные из базы
     function deleteAds($id){
-        $ViewModels = new View(); //инициализируем модель
+        $ViewModels = new Ads(); //инициализируем модель
         $ViewModels->deleteBD($id);
     }
 

@@ -1,15 +1,16 @@
 <?php
-class View{
+class Model{
 	public $params; //параметры для выпадающих списков
-	private $db = null; // линк к БД
+	protected $db = null; // линк к БД
 
 	function __construct(){
+		//проверим заполнен ли конфигурационный файл с подключением к БД в случае ошибки перенаправим на установку
+		//делаем такую проверку до подключения к БД
+		if (!file_get_contents('base.conf')){
+			header('Location: http://'.$_SERVER['HTTP_HOST'].'/install');
+			exit;
+		}
 		$this->db=DatabaseConnection::getConnection();
-	}
-	//получаем объявления из БД
-	function getAdsBD(){
-		$params = $this->db->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad');
-		return $params;
 	}
 
 	//функция получает данные для формы
@@ -22,24 +23,8 @@ class View{
 	    return $this->params = $params;
 	}
 
-	/** функция отвечающая за отправление в БД новых данных */
-	function postBD($data){
-		$this->db->query('INSERT INTO ad(?#) VALUES(?a)', array_keys($data), array_values($data));
-	}
-
-	/** функция отвечающая за обновление в БД присланных через форму данных */
-	function updateBD($data,$id){
-		$this->db->query('UPDATE ad SET ?a WHERE ad.id=?d', $data,$id);
-	}
-
-	/** функция отвечающая за удаление из БД данных */
-	function deleteBD($id){
-		$this->db->query('DELETE FROM ad WHERE id=?d', $id);
-	}
 	//главная функция вывода темплейта
 	function render($adsFromBD=null,$id=null){
-
-		$this->getDataBD();// получаем данные из базы для формы в виде массива
 
 		/** создаем объект библиотеки вывода Смарти и настраиваем его **/
 		$smarty = new Smarty(); //класс внешнего шаблонизатора
@@ -53,14 +38,15 @@ class View{
 		$smarty->config_dir = $smarty_dir.'configs';
 		/** Закончили  **/
 
+		//выводим основной шаблон
+		$this->getDataBD();// получаем данные из базы для формы в виде массива
 		if($id!=null){$smarty->assign('form_param',$adsFromBD[$id]); }//наполняем форму значениями при гете
 		$smarty->assign('bd', $adsFromBD);
 		$smarty->assign('options_city',$this->params['city']);
 		$smarty->assign('options_cat',$this->params['cat']);
 		$smarty->assign('radios', array(1 => 'Частное лицо', 2 => 'Компания'));
-
-		//выводим шаблон
 		$smarty->display('index.tpl');
+
 
 	}
 

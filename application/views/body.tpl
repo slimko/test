@@ -1,6 +1,6 @@
 	<div class="col-sm-7 col-md-6 col-lg-6" style="background-color: #e0f2f1;margin-top:15px;">
-		<form action="http://{$smarty.server.SERVER_NAME}/post" method="post" class="form-horizontal">
-			<input type="hidden"  name="id"  value="{$form_param->id}">
+		<form action="http://{$smarty.server.SERVER_NAME}/index/post" method="post" class="form-horizontal">
+			<input type="hidden"  name="id"  value="{$form_param->id|default}">
 
 			<div class="form-group">
 				<div class="col-sm-offset-4 col-sm-8 radio">
@@ -11,20 +11,20 @@
 			<div class="form-group">
 					<label for="first_name" class="col-sm-4 control-label">Ваше имя</label>
 					<div class="col-sm-8">
-						<input type="text" class="form-control" maxlength="40" name="name" id="first_name" value="{$form_param->name}" placeholder="Введите Ваше имя">
+						<input type="text" class="form-control" maxlength="40" name="name" id="first_name" value="{$form_param->name|default:''}" placeholder="Введите Ваше имя">
 					</div>
 			</div>
 			<div class="form-group">
 				<label for="email" class="col-sm-4 control-label">Электронная почта</label>
 				<div class="col-sm-8">
-					<input type="text" name="email" id="email" class="form-control" value="{$form_param->email}">
+					<input type="text" name="email" id="email" class="form-control" value="{$form_param->email|default:''}">
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-offset-4 col-sm-8">
 					<div class="checkbox">
 						<label>
-							<input type="checkbox" name="allow_mails" value="1" {if $form_param->allow_mails eq '1'}checked{/if}> Я не хочу получать вопросы по объявлению на e-mail
+							<input type="checkbox" name="allow_mails" value="1" {if $form_param->allow_mails|default:0 eq '1'}checked{/if}> Я не хочу получать вопросы по объявлению на e-mail
 						</label>
 					</div>
 				</div>
@@ -32,7 +32,7 @@
 			<div class="form-group">
 				<label for="fld_phone" class="col-sm-4 control-label">Номер телефона</label>
 				<div class="col-sm-8">
-					<input type="text" class="form-control" name="phone" id="fld_phone" value="{$form_param->phone}">
+					<input type="text" class="form-control" name="phone" id="fld_phone" value="{$form_param->phone|default:''}">
 				</div>
 			</div>
 			<div class="form-group">
@@ -40,7 +40,7 @@
 				<div class="col-sm-8">
 					<select name="city" class="form-control">
 						<option value='null'>-- Выберите город --</option>
-						{html_options options=$options_city selected=$form_param->city}
+						{html_options options=$options_city selected=$form_param->city|default:''}
 						<option value='1000' {if $form_param->city eq '1000'}selected{/if}>Другой город</option>
 					</select>
 				</div>
@@ -50,26 +50,26 @@
 				<div class="col-sm-8">
 					<select name="cat" class="form-control">
 						<option value='null'>-- Выберите категорию --</option>
-						{html_options options=$options_cat selected=$form_param->cat}
+						{html_options options=$options_cat selected=$form_param->cat|default:''}
 					</select>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="title_ad" class="col-sm-4 control-label">Название объявления</label>
 				<div class="col-sm-8">
-					<input type="text" class="form-control" maxlength="50" name="title_ad" id="title_ad" value="{$form_param->title_ad}">
+					<input type="text" class="form-control" maxlength="50" name="title_ad" id="title_ad" value="{$form_param->title_ad|default:''}">
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="description" class="col-sm-4 control-label">Описание объявления</label>
 				<div class="col-sm-8">
-					<textarea maxlength="3000" name="description" for="description" class="form-control" rows="3">{$form_param->description}</textarea>
+					<textarea maxlength="3000" name="description" for="description" class="form-control" rows="3">{$form_param->description|default:''}</textarea>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="price" class="col-sm-4 control-label">Цена</label>
 				<div class="col-sm-7">
-					<input type="text" class="form-control" maxlength="9" name="price" id="price" value="{$form_param->price}">
+					<input type="text" class="form-control" maxlength="9" name="price" id="price" value="{$form_param->price|default:''}">
 				</div>
 				<div class="col-sm-1">
 					<p class="form-control-static">руб.</p>
@@ -100,8 +100,8 @@
 					<td>{$Value->id}.</td>
 					<td>{$Value->title_ad|escape:htmlall:'UTF-8'}</td>
 					<td>{$Value->price|escape:htmlall:'UTF-8'} руб.</td>
-					<td><a href="http://{$smarty.server.SERVER_NAME}/get/id/{$Value->id}">редактировать</a></td>
-					<td><a href="http://{$smarty.server.SERVER_NAME}/del/id/{$nameValue}">удалить</a></td>
+					<td><a href="http://{$smarty.server.SERVER_NAME}/index/get/id/{$Value->id}">редактировать</a></td>
+					<td><a href="http://{$smarty.server.SERVER_NAME}/index/del/id/{$nameValue}">удалить</a></td>
 				</tr>
 				</tr>
 				{foreachelse}
