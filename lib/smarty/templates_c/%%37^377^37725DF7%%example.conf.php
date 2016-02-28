@@ -1,4 +1,4 @@
 <?php $_config_vars = array (
-  'pageTitle' => 'This is mine',
-  'style' => 'style.css',
+  'pageTitle' => 'Домашка 12',
+  'style' => 'bootstrap.min.css',
 ); ?>

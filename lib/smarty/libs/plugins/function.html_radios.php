@@ -132,9 +132,9 @@ function smarty_function_html_radios_output($name, $value, $output, $selected, $
     if ($labels) {
       if($label_ids) {
           $_id = smarty_function_escape_special_chars(preg_replace('![^\w\-\.]!', '_', $name . '_' . $value));
-          $_output .= '<label for="' . $_id . '">';
+          $_output .= '<label class="radio-inline" for="' . $_id . '">';
       } else {
-          $_output .= '<label>';           
+          $_output .= '<label class="radio-inline">';           
       }
    }
    $_output .= '<input type="radio" name="'
