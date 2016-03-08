@@ -7,27 +7,33 @@ class DatabaseConnection{
 	private function __construct(){
 		require_once "./lib/dbsimple/config.php";
 		require_once "./lib/dbsimple/DbSimple/Generic.php";
+
 		$config = $this->getConfig();//получаем конфиг к подключению к базе данных
 		$this->db = DbSimple_Generic::connect("mysql://{$config['user_name']}:{$config['password']}@{$config['server_name']}/{$config['database']}");
+		//в случае возникновения ошибки
 		if(!empty($this->db->error)){
-			echo '<p>Подключение к базе данных не выполнено. Выполните <a href="./install">установку</a> скрипта!</p>';
-			exit;
+			$this->db = $this->databaseError($this->db->error['code'],$this->db->error['message']);
+			return $this->db;
 		}
-		// Дальше работаем с соединением (или текущей транзакцией) $DB.
-		// Устанавливаем обработчик ошибок.
-		//$this->db->setErrorHandler('databaseErrorHandler');
-
 		$this->db->query("SET NAMES UTF8");
 	}
-	//неработающи обработчик ошибок
-	function databaseErrorHandler($message, $info){
-		// Если использовалась @, ничего не делать.
-		if (!error_reporting()) return;
-		// Выводим подробную информацию об ошибке.
-		echo "SQL Error: $message<br><pre>";
-		print_r($info);
-		echo "</pre>";
-		exit();
+
+	//обработчик ошибок
+	function databaseError($code,$message){
+		switch ($code) {
+			case 2005:
+				return $message;
+				break;
+			case 1045:
+				return $message;
+				break;
+			case 1046:
+				return $message;
+				break;
+			case 1049:
+				return $message;
+				break;
+		}
 	}
 
 	// получаем коннект к базе если его нет. статический метод
