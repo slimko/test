@@ -84,8 +84,11 @@
 		</form>
 	</div>
 	<div class="col-sm-5 col-md-6 col-lg-6">
+
 	<span style="color:red;">{$price_error|default:''}</span>
 		<h2>Доска объявлений:</h2>
+		<div id="message" class="alert alert-success alert-dismissible" role="alert">
+		</div>
 		{* выводим объявления *}
 		<table class="table table-hover">
 			<thead>
@@ -97,11 +100,12 @@
 			<tbody>
 			{foreach from=$bd key=nameValue item=Value }
 				<tr>
-					<td>{$Value->id}.</td>
+					<td>{$Value->id}</td>
 					<td>{$Value->title_ad|escape:htmlall:'UTF-8'}</td>
 					<td>{$Value->price|escape:htmlall:'UTF-8'} руб.</td>
 					<td><a href="http://{$smarty.server.SERVER_NAME}/index/get/id/{$Value->id}">редактировать</a></td>
-					<td><a href="http://{$smarty.server.SERVER_NAME}/index/del/id/{$nameValue}">удалить</a></td>
+					<td><a class="delete btn btn-default">удалить</a></td>
+
 				</tr>
 				</tr>
 				{foreachelse}

@@ -34,7 +34,9 @@ class IndexController {
 	function delAction(){
 		$id = $this->fc->getParams();//получаем id редактируемой записи
 		$this->Models->deleteBD($id['id']); //удаляем запись из базы данных
-		$this->indexAction(); //продолжаем отображение данных и страницы
+		echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Запись удалена</strong>';
+		//$this->indexAction(); //продолжаем отображение данных и страницы
 	}
 
 }

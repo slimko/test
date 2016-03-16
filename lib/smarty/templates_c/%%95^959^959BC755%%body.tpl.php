@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.28, created on 2016-02-28 15:28:08
+<?php /* Smarty version 2.6.28, created on 2016-03-17 02:26:36
          compiled from body.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'body.tpl', 3, false),array('modifier', 'escape', 'body.tpl', 101, false),array('function', 'html_radios', 'body.tpl', 7, false),array('function', 'html_options', 'body.tpl', 43, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'body.tpl', 3, false),array('modifier', 'escape', 'body.tpl', 104, false),array('function', 'html_radios', 'body.tpl', 7, false),array('function', 'html_options', 'body.tpl', 43, false),)), $this); ?>
 	<div class="col-sm-7 col-md-6 col-lg-6" style="background-color: #e0f2f1;margin-top:15px;">
 		<form action="http://<?php echo $_SERVER['SERVER_NAME']; ?>
 /index/post" method="post" class="form-horizontal">
@@ -99,9 +99,12 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '
 		</form>
 	</div>
 	<div class="col-sm-5 col-md-6 col-lg-6">
+
 	<span style="color:red;"><?php echo ((is_array($_tmp=@$this->_tpl_vars['price_error'])) ? $this->_run_mod_handler('default', true, $_tmp, '') : smarty_modifier_default($_tmp, '')); ?>
 </span>
 		<h2>Доска объявлений:</h2>
+		<div id="message" class="alert alert-success alert-dismissible" role="alert">
+		</div>
 				<table class="table table-hover">
 			<thead>
 				<th>#</th>
@@ -115,7 +118,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '
 ?>
 				<tr>
 					<td><?php echo $this->_tpl_vars['Value']->id; ?>
-.</td>
+</td>
 					<td><?php echo ((is_array($_tmp=$this->_tpl_vars['Value']->title_ad)) ? $this->_run_mod_handler('escape', true, $_tmp, 'htmlall', 'UTF-8') : smarty_modifier_escape($_tmp, 'htmlall', 'UTF-8')); ?>
 </td>
 					<td><?php echo ((is_array($_tmp=$this->_tpl_vars['Value']->price)) ? $this->_run_mod_handler('escape', true, $_tmp, 'htmlall', 'UTF-8') : smarty_modifier_escape($_tmp, 'htmlall', 'UTF-8')); ?>
@@ -123,9 +126,8 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', '
 					<td><a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>
 /index/get/id/<?php echo $this->_tpl_vars['Value']->id; ?>
 ">редактировать</a></td>
-					<td><a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>
-/index/del/id/<?php echo $this->_tpl_vars['nameValue']; ?>
-">удалить</a></td>
+					<td><a class="delete btn btn-default">удалить</a></td>
+
 				</tr>
 				</tr>
 				<?php endforeach; else: ?>
