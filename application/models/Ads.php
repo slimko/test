@@ -1,20 +1,66 @@
 <?php
 class Ads extends Model{
 
-    //получаем объявления из БД
-    function getAdsBD(){
-        $params = $this->db->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad');
-        return $params;
+    private $id = 'null';
+    private $name = 'null';
+    private $email = 'null';
+    private $phone = 'null';
+    private $title_ad = 'null';
+    private $price = 'null';
+    private $description = 'null';
+    private $city = 'null';
+    private $allow_mails = 'null';
+    private $cat = 'null';
+    private $private = 'null';
+
+
+    public function __construct($ads=null){
+       parent::__construct();
+        /** проходимся по переменным используемых в классе (самописный __set) */
+        if($ads!=null) {
+            foreach ($ads as $keys => $value){
+                $this->$keys = $value;
+            }
+        }
     }
 
-    //функция получает данные для формы
-    function getDataBD(){
-        //получаем возможные города для формы
-        $params['city'] = $this->db->selectCol('SELECT id AS ARRAY_KEY, name FROM city ORDER by id ASC');
-        //получаем возможные категории для формы
-        $params['cat'] = $this->db->selectCol('SELECT t1.name AS ARRAY_KEY_1, t2.id AS ARRAY_KEY_2,t2.name FROM category AS t1 Left JOIN category as t2 ON t2.parent_id=t1.id WHERE t2.name is not null');
+    //магические методы
+    public function __get($property){
+        return $this->$property;
+    }
 
-        return $this->params = $params;
+    /**  метод получает значения свойств */
+    public function getFormParams(){
+        return array('name' => $this->name, 'private' => $this->private, 'email' => $this->email, 'phone' => $this->phone, 'title_ad' => $this->title_ad, 'price' => $this->price, 'description' => $this->description, 'city' => $this->city, 'allow_mails' => $this->allow_mails, 'cat' =>$this->cat);
+    }
+
+    /**  получаем все объявления из БД */
+    function getAdsFromBD(){
+        $adsArray = $this->db->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad');
+        return $adsArray;
+    }
+
+    /** метод получает все объявления */
+    public function getAds(){
+        $result = array();
+        $ads = $this->db->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad');
+        if ($ads != null) {
+            foreach ($ads as $key => $value) {
+                $user = new Ads( $value ); //!!!!!!!!!!!! вот этот момент меня волнует - мне кажется, так делать нельзя
+                $result[$key] = $user;
+            }
+            return $result;
+        }
+    }
+
+    /** метод определяет постить или обновлять в базе данные */
+    function postAds(){
+        if($this->id != null){ //проверяем наличие id у формы
+            $this->updateBD($this->getFormParams(),$this->id); //отправляем в базу данных на обновление
+        }
+        else{
+            $this->postBD($this->getFormParams()); //отправляем данные в базу данных на запись
+        }
     }
 
     /** функция отвечающая за отправление в БД новых данных */

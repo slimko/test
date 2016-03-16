@@ -10,10 +10,12 @@ class Model{
 			header('Location: http://'.$_SERVER['HTTP_HOST'].'/install');
 			exit;
 		}
-		$this->db=DatabaseConnection::getConnection();
+		$this->db=DatabaseConnection::getConnection(); //подключаемся к базе данных
 	}
 
-	//функция получает данные для формы
+
+
+	//функция получает данные для формы (города и категории)
 	function getDataBD(){
 		//получаем возможные города для формы
 		$params['city'] = $this->db->selectCol('SELECT id AS ARRAY_KEY, name FROM city ORDER by id ASC');
@@ -25,7 +27,6 @@ class Model{
 
 	//главная функция вывода темплейта
 	function render($adsFromBD=null,$id=null){
-
 		/** создаем объект библиотеки вывода Смарти и настраиваем его **/
 		$smarty = new Smarty(); //класс внешнего шаблонизатора
 		$smarty_dir='./lib/smarty/';
@@ -41,12 +42,12 @@ class Model{
 		//выводим основной шаблон
 		$this->getDataBD();// получаем данные из базы для формы в виде массива
 		if($id!=null){$smarty->assign('form_param',$adsFromBD[$id]); }//наполняем форму значениями при гете
-		$smarty->assign('bd', $adsFromBD);
+
+		$smarty->assign('bd', $adsFromBD); //переменная для вывода всех объявлений
 		$smarty->assign('options_city',$this->params['city']);
 		$smarty->assign('options_cat',$this->params['cat']);
 		$smarty->assign('radios', array(1 => 'Частное лицо', 2 => 'Компания'));
 		$smarty->display('index.tpl');
-
 
 	}
 
