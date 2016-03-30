@@ -1,5 +1,5 @@
 	<div class="col-sm-7 col-md-6 col-lg-6" style="background-color: #e0f2f1;margin-top:15px;">
-		<form action="http://{$smarty.server.SERVER_NAME}/index/post" method="post" class="form-horizontal">
+		<form action="https://{$smarty.server.SERVER_NAME}/index/post" method="post" class="form-horizontal" id="myform" name="forma">
 			<input type="hidden"  name="id"  value="{$form_param->id|default}">
 
 			<div class="form-group">
@@ -84,8 +84,13 @@
 		</form>
 	</div>
 	<div class="col-sm-5 col-md-6 col-lg-6">
+
 	<span style="color:red;">{$price_error|default:''}</span>
 		<h2>Доска объявлений:</h2>
+		<div id="message" class="alert alert-success" role="alert" style="display:none;">
+			<button type="button" class="btn close" onclick="$('#message').hide();return false;"><span aria-hidden="true">&times;</span></button>
+			<div id="message_info"></div>
+		</div>
 		{* выводим объявления *}
 		<table class="table table-hover">
 			<thead>
@@ -97,11 +102,12 @@
 			<tbody>
 			{foreach from=$bd key=nameValue item=Value }
 				<tr>
-					<td>{$Value->id}.</td>
+					<td>{$Value->id}</td>
 					<td>{$Value->title_ad|escape:htmlall:'UTF-8'}</td>
 					<td>{$Value->price|escape:htmlall:'UTF-8'} руб.</td>
-					<td><a href="http://{$smarty.server.SERVER_NAME}/index/get/id/{$Value->id}">редактировать</a></td>
-					<td><a href="http://{$smarty.server.SERVER_NAME}/index/del/id/{$nameValue}">удалить</a></td>
+					<td><a href="https://{$smarty.server.SERVER_NAME}/index/get/id/{$Value->id}">редактировать</a></td>
+					<td><a class="delete btn btn-default">удалить</a></td>
+
 				</tr>
 				</tr>
 				{foreachelse}

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2016-02-28 18:25:39
+<?php /* Smarty version 2.6.28, created on 2016-03-17 11:33:21
          compiled from header.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -10,9 +10,11 @@
 </title>
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<!-- Bootstrap -->
-		<link href="http://<?php echo $_SERVER['SERVER_NAME']; ?>
+		<link href="https://<?php echo $_SERVER['SERVER_NAME']; ?>
 /css/<?php echo $this->_config[0]['vars']['style']; ?>
 " rel="stylesheet">
+		<link href="https://<?php echo $_SERVER['SERVER_NAME']; ?>
+/css/style.css" rel="stylesheet">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
