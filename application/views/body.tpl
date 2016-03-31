@@ -1,6 +1,6 @@
 	<div class="col-sm-7 col-md-6 col-lg-6" style="background-color: #e0f2f1;margin-top:15px;">
 		<form action="https://{$smarty.server.SERVER_NAME}/index/post" method="post" class="form-horizontal" id="myform" name="forma">
-			<input type="hidden"  name="id"  value="{$form_param->id|default}">
+			<input type="hidden"  class="form-control" name="id"  value="{$form_param->id|default}">
 
 			<div class="form-group">
 				<div class="col-sm-offset-4 col-sm-8 radio">

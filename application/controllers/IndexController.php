@@ -27,7 +27,8 @@ class IndexController {
 	function getAction(){
 		$ads = $this->Models->getAds(); //получем объявления
 		$id = $this->fc->getParams();//получаем id редактируемой записи
-		$this->fc->setBody($this->Models->render($ads,$id['id'])); //выводим пользователю результат (рендерим страницу)
+		$this->fc->setBody($this->Models->render($ads,$id['id']));
+			 //выводим пользователю результат (рендерим страницу)
 	}
 
 	/** метод работающий при гет запросе - удалить запись */

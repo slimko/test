@@ -1,11 +1,11 @@
-<?php /* Smarty version 2.6.28, created on 2016-03-30 03:01:45
+<?php /* Smarty version 2.6.28, created on 2016-03-31 14:19:12
          compiled from body.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'body.tpl', 3, false),array('modifier', 'escape', 'body.tpl', 106, false),array('function', 'html_radios', 'body.tpl', 7, false),array('function', 'html_options', 'body.tpl', 43, false),)), $this); ?>
 	<div class="col-sm-7 col-md-6 col-lg-6" style="background-color: #e0f2f1;margin-top:15px;">
 		<form action="https://<?php echo $_SERVER['SERVER_NAME']; ?>
 /index/post" method="post" class="form-horizontal" id="myform" name="forma">
-			<input type="hidden"  name="id"  value="<?php echo ((is_array($_tmp=@$this->_tpl_vars['form_param']->id)) ? $this->_run_mod_handler('default', true, $_tmp) : smarty_modifier_default($_tmp)); ?>
+			<input type="hidden"  class="form-control" name="id"  value="<?php echo ((is_array($_tmp=@$this->_tpl_vars['form_param']->id)) ? $this->_run_mod_handler('default', true, $_tmp) : smarty_modifier_default($_tmp)); ?>
 ">
 
 			<div class="form-group">

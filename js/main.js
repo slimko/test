@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('a.delete').on('click', function () {
         var tr = $(this).closest('tr');
         var id = tr.children('td:first').html();
-         $.getJSON('https://homework-slimko.c9users.io/index/del/id/'+id,
+         $.getJSON('/index/del/id/'+id,
             null,
             function (response) {
                  tr.fadeOut('slow', function () {

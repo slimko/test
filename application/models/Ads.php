@@ -55,7 +55,7 @@ class Ads extends Model{
 
     /** метод определяет постить или обновлять в базе данные */
     function postAds(){
-        if($this->id != null){ //проверяем наличие id у формы
+        if($this->id != null and $this->id!=''){ //проверяем наличие id у формы
             $this->updateBD($this->getFormParams(),$this->id); //отправляем в базу данных на обновление
         }
         else{
