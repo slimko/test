@@ -32,11 +32,16 @@ class IndexController {
 
 	/** метод работающий при гет запросе - удалить запись */
 	function delAction(){
+		$result=array();
 		$id = $this->fc->getParams();//получаем id редактируемой записи
-		$this->Models->deleteBD($id['id']); //удаляем запись из базы данных
-		echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Запись удалена</strong>';
-		//$this->indexAction(); //продолжаем отображение данных и страницы
+		if($this->Models->deleteBD($id['id'])){ //удаляем запись из базы данных
+			$result['status']='success';
+			$result['message']='Запись удалена';
+		}else{
+			$result['status']='error';
+			$result['message']='Ошибка удаления записи';
+		}
+		echo json_encode($result);
 	}
 
 }

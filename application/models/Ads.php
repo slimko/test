@@ -76,5 +76,6 @@ class Ads extends Model{
     /** функция отвечающая за удаление из БД данных */
     function deleteBD($id){
         $this->db->query('DELETE FROM ad WHERE id=?d', $id);
+        return true;
     }
 }

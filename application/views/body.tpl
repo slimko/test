@@ -1,5 +1,5 @@
 	<div class="col-sm-7 col-md-6 col-lg-6" style="background-color: #e0f2f1;margin-top:15px;">
-		<form action="http://{$smarty.server.SERVER_NAME}/index/post" method="post" class="form-horizontal">
+		<form action="http://{$smarty.server.SERVER_NAME}/index/post" method="post" id="myform" class="form-horizontal">
 			<input type="hidden"  name="id"  value="{$form_param->id|default}">
 
 			<div class="form-group">
@@ -87,7 +87,9 @@
 
 	<span style="color:red;">{$price_error|default:''}</span>
 		<h2>Доска объявлений:</h2>
-		<div id="message" class="alert alert-success alert-dismissible" role="alert">
+		<div id="message" class="alert alert-success" role="alert" style="display:none;">
+			<button type="button" class="btn close" onclick="$('#message').hide();return false;"><span aria-hidden="true">&times;</span></button>
+			<div id="message_info"></div>
 		</div>
 		{* выводим объявления *}
 		<table class="table table-hover">
