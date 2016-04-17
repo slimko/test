@@ -3,22 +3,21 @@ $(document).ready(function() {
 
     // post-submit callback
     function showResponse(response)  {
-        alert(response);
-        //clearForm();//очистка формы
-        //console.dir(response); //консоль
-        //if(response.ads){
-        //    $(response.ads).appendTo( "#ads>tbody" );
-        //}
-        ////$('#ads>tbody').append(response.ads);
-        //if(response.status=='success'){
-        //    $('#message_info').html(response.message);
-        //    $('#message').removeClass('alert-danger').addClass('alert-success');
-        //    $('#message').show();
-        //}else{
-        //    $('#message_info').html(response.message);
-        //    $('#message').removeClass('alert-success').addClass('alert-danger');
-        //    $('#message').show();
-        //}
+        clearForm();//очистка формы
+        console.dir(response); //консоль
+        if(response.ads){
+            $(response.ads).appendTo( "#ads>tbody" );
+        }
+        //$('#ads>tbody').append(response.ads);
+        if(response.status=='success'){
+            $('#message_info').html(response.message);
+            $('#message').removeClass('alert-danger').addClass('alert-success');
+            $('#message').show();
+        }else{
+            $('#message_info').html(response.message);
+            $('#message').removeClass('alert-success').addClass('alert-danger');
+            $('#message').show();
+        }
 
     }
     //функция очистки формы
