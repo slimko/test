@@ -2,47 +2,45 @@
 //основной класс по работе с объявлениями (запись, удаление, редактирование)
 class IndexController {
 	private $postAds = NULL; //массив пост
-	private $Models; //переменная модели объявлений
+	private $modelAds; //переменная модели объявлений
 	private $fc; //FrontController
 
 	public function __construct($ads_post){
 		if($ads_post!==null)$this->postAds=$ads_post;    //если есть $_POST пишем в свойство $postAds
-		$this->Models = new Ads($this->postAds);		//инициализируем модель
+		$this->modelAds = new Ads($this->postAds);		//инициализируем модель
 		$this->fc = FrontController::getInstance();    //инициализируем фронт контроллер
 	}
 
 	/** метод срабатывающий при первом запуске программы или при отсутствии других параметров */
 	function indexAction(){
-		$ads = $this->Models->getAds(); //получаем объявления
-		$this->fc->setBody($this->Models->render($ads)); //выводим пользователю результат (рендерим страницу)
+		$ads = $this->modelAds->getAds(); //получаем объявления
+		$this->fc->setBody($this->modelAds->render($ads)); //выводим пользователю результат (рендерим страницу)
 	}
 
 	/** метод обрабатывающий отправку формы  */
 	function postAction(){
-		$this->Models->postAds(); //добавляем нашу запись в базу данных
-		$this->indexAction(); //продолжаем отображение данных и страницы
+		$response = $this->modelAds->postAds(); //добавляем нашу запись в базу данных и получаем ответ
+		$this->modelAds->renderTable($response);
 	}
 
 	/** метод работающий при гет запросе - запросить запись на редактирование  */
 	function getAction(){
-		$ads = $this->Models->getAds(); //получем объявления
 		$id = $this->fc->getParams();//получаем id редактируемой записи
-		$this->fc->setBody($this->Models->render($ads,$id['id'])); //выводим пользователю результат (рендерим страницу)
+		$ads = $this->modelAds->getAds($id['id']); //получем объявление для редактирования
+		$this->modelAds->renderForm($ads); // отдаем объект объявления на рендер формы
+
+		//$this->fc->setBody($this->modelAds->render($ads,$id['id']));
+			 //выводим пользователю результат (рендерим страницу)
 	}
 
 	/** метод работающий при гет запросе - удалить запись */
 	function delAction(){
-		$result=array();
-		$id = $this->fc->getParams();//получаем id редактируемой записи
-		if($this->Models->deleteBD($id['id'])){ //удаляем запись из базы данных
-			$result['status']='success';
-			$result['message']='Запись удалена';
-		}else{
-			$result['status']='error';
-			$result['message']='Ошибка удаления записи';
-		}
-		echo json_encode($result);
+		$params = $this->fc->getParams();//получаем id редактируемой записи
+		$result = $this->modelAds->deleteBD($params['id']); //возвращает id удаленной записи
+
+		$this->createResponse($result,'del'); //формируем ответ от сервера
 	}
+
 
 }
 ?>

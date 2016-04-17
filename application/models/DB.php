@@ -1,6 +1,6 @@
 <?php
-class DatabaseConnection{
-	public $db = NULL;
+class DB{
+	protected $db = NULL;
 	private static $instance = NULL;
 	protected $_conf;
 
@@ -8,8 +8,10 @@ class DatabaseConnection{
 		require_once "./lib/dbsimple/config.php";
 		require_once "./lib/dbsimple/DbSimple/Generic.php";
 
-		$config = $this->getConfig();//получаем конфиг к подключению к базе данных
-		$this->db = DbSimple_Generic::connect("mysql://{$config['user_name']}:{$config['password']}@{$config['server_name']}/{$config['database']}");
+		$this->getConfig();//получаем конфиг к подключению к базе данных
+
+		$this->db = DbSimple_Generic::connect("mysql://{$this->_conf['user_name']}:{$this->_conf['password']}@{$this->_conf['server_name']}/{$this->_conf['database']}");
+
 		//в случае возникновения ошибки
 		if(!empty($this->db->error)){
 			$this->db = $this->databaseError($this->db->error['code'],$this->db->error['message']);
@@ -37,7 +39,7 @@ class DatabaseConnection{
 	}
 
 	// получаем коннект к базе если его нет. статический метод
-	public static function getConnection(){
+	public static function Conn(){
 		if(!(self::$instance instanceOf self)){
 			self::$instance = new self();
 		}

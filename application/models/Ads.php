@@ -15,7 +15,7 @@ class Ads extends Model{
 
 
     public function __construct($ads=null){
-       parent::__construct();
+       //parent::__construct();
         /** проходимся по переменным используемых в классе (самописный __set) */
         if($ads!=null) {
             foreach ($ads as $keys => $value){
@@ -24,7 +24,7 @@ class Ads extends Model{
         }
     }
 
-    //магические методы
+    /** магические методы */
     public function __get($property){
         return $this->$property;
     }
@@ -34,48 +34,81 @@ class Ads extends Model{
         return array('name' => $this->name, 'private' => $this->private, 'email' => $this->email, 'phone' => $this->phone, 'title_ad' => $this->title_ad, 'price' => $this->price, 'description' => $this->description, 'city' => $this->city, 'allow_mails' => $this->allow_mails, 'cat' =>$this->cat);
     }
 
-    /**  получаем все объявления из БД */
-    function getAdsFromBD(){
-        $adsArray = $this->db->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad');
-        return $adsArray;
-    }
-
-    /** метод получает все объявления */
-    public function getAds(){
+    /** метод получает массив объектов объявлений или одного объявления */
+    public function getAds($id = null){
         $result = array();
-        $ads = $this->db->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad');
-        if ($ads != null) {
-            foreach ($ads as $key => $value) {
-                $user = new Ads( $value ); //!!!!!!!!!!!! вот этот момент меня волнует - мне кажется, так делать нельзя
-                $result[$key] = $user;
+
+            if($id){
+                $ads = DB::Conn()->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad WHERE id='.$id);
+                $result = new Ads($ads[$id]);
+                return $result;
+            }else{
+                $ads = DB::Conn()->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad');
+
+                if ($ads != null) {
+                    foreach ($ads as $key => $value) {
+                        $user = new Ads( $value );
+                        $result[$key] = $user;
+                    }
+                    return $result;
+                }
             }
-            return $result;
-        }
     }
 
     /** метод определяет постить или обновлять в базе данные */
     function postAds(){
-        if($this->id != null){ //проверяем наличие id у формы
-            $this->updateBD($this->getFormParams(),$this->id); //отправляем в базу данных на обновление
+        if($this->id != null and $this->id!=''){ //проверяем наличие id у формы
+            $id = $this->updateBD('ad',$this->getFormParams(),$this->id); //отправляем в базу данных на обновление
+           $result = $this->createResponse($id,'update',$this->getFormParams()); //формируем ответ от сервера
+            echo json_encode($result);
         }
         else{
-            $this->postBD($this->getFormParams()); //отправляем данные в базу данных на запись
+            $id = $this->postBD('ad', $this->getFormParams()); //отправляем новые данные в базу данных на запись
+            $result = $this->createResponse($id,'insert',$this->getFormParams()); //формируем ответ от сервера
+            return $result;
         }
+
     }
 
-    /** функция отвечающая за отправление в БД новых данных */
-    function postBD($data){
-        $this->db->query('INSERT INTO ad(?#) VALUES(?a)', array_keys($data), array_values($data));
-    }
 
-    /** функция отвечающая за обновление в БД присланных через форму данных */
-    function updateBD($data,$id){
-        $this->db->query('UPDATE ad SET ?a WHERE ad.id=?d', $data,$id);
-    }
-
-    /** функция отвечающая за удаление из БД данных */
-    function deleteBD($id){
-        $this->db->query('DELETE FROM ad WHERE id=?d', $id);
-        return true;
+    /** формируем ответ от сервера  */
+    function createResponse($id,$method,$data=null){
+        switch ($method) {
+            case "insert": {
+                if ($id) {
+                    $result['status'] = 'success';
+                    $result['ads'] = $data;
+                    $result['ads']['id'] = $id;
+                    $result['message'] = "Товар #" . $id . " успешно добавлен";
+                } else {
+                    $result['status'] = 'error';
+                    $result['message'] = "Ошибка обновления или вставки данных";
+                }
+                return $result;
+                break;
+            }
+            case "del":{
+                if($id){ //удаляем запись из базы данных
+                    $result['status']='success';
+                    $result['message']='Запись №'.$id.' удалена';
+                }else{
+                    $result['status']='error';
+                    $result['message']='Ошибка удаления №'.$id.' записи';
+                }
+                return $result;
+                break;
+            }
+            case "update":{
+                if($id){ //удаляем запись из базы данных
+                    $result['status']='success';
+                    $result['message']='Запись №'.$id.' обновлена';
+                }else{
+                    $result['status']='error';
+                    $result['message']='Ошибка удаления №'.$id.' обновлена';
+                }
+                return $result;
+                break;
+            }
+        }
     }
 }

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2016-03-17 02:31:29
+<?php /* Smarty version 2.6.28, created on 2016-04-10 23:25:46
          compiled from header.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -13,13 +13,11 @@
 		<link href="http://<?php echo $_SERVER['SERVER_NAME']; ?>
 /css/<?php echo $this->_config[0]['vars']['style']; ?>
 " rel="stylesheet">
-		<link href="http://<?php echo $_SERVER['SERVER_NAME']; ?>
-/css/style.css" rel="stylesheet">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
 	<body>
