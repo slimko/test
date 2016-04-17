@@ -7,7 +7,11 @@ class DB{
 	private function __construct(){
 		require_once "./lib/dbsimple/config.php";
 		require_once "./lib/dbsimple/DbSimple/Generic.php";
-
+		//проверим заполнен ли конфигурационный файл с подключением к БД в случае ошибки перенаправим на установку
+		if (!file_get_contents('base.conf')){
+			header('Location: http://'.$_SERVER['HTTP_HOST'].'/install');
+			exit;
+		}
 		$this->getConfig();//получаем конфиг к подключению к базе данных
 
 		$this->db = DbSimple_Generic::connect("mysql://{$this->_conf['user_name']}:{$this->_conf['password']}@{$this->_conf['server_name']}/{$this->_conf['database']}");

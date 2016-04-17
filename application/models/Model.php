@@ -4,11 +4,7 @@ class Model{
 	//private $db = null; // линк к БД
 
 	function __construct(){
-		//проверим заполнен ли конфигурационный файл с подключением к БД в случае ошибки перенаправим на установку
-		if (!file_get_contents('base.conf')){
-			header('Location: http://'.$_SERVER['HTTP_HOST'].'/install');
-			exit;
-		}
+
 		//$this->db=DB::Conn(); //подключаемся к базе данных
 	}
 	//магические методы

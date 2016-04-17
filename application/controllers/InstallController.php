@@ -21,7 +21,7 @@ class InstallController{
                 $result=$view->render($errMes); //показываем форму установки
             }
             else {
-                $this->db = DatabaseConnection::getConnection();
+                $this->db = DB::Conn();
                 if (!is_object($this->db)){
                     $view = new installView();
                     $result = $view->render($this->db); //показываем форму установки
