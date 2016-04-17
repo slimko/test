@@ -36,9 +36,7 @@ class IndexController {
 	/** метод работающий при гет запросе - удалить запись */
 	function delAction(){
 		$params = $this->fc->getParams();//получаем id редактируемой записи
-		$result = $this->modelAds->deleteBD($params['id']); //возвращает id удаленной записи
-
-		$this->createResponse($result,'del'); //формируем ответ от сервера
+		$result = $this->modelAds->delAds($params['id']); //возвращает id удаленной записи
 	}
 
 

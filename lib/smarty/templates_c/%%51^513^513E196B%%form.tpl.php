@@ -1,9 +1,8 @@
-<?php /* Smarty version 2.6.28, created on 2016-04-17 14:07:34
+<?php /* Smarty version 2.6.28, created on 2016-04-17 15:11:38
          compiled from form.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'form.tpl', 2, false),array('function', 'html_radios', 'form.tpl', 5, false),array('function', 'html_options', 'form.tpl', 41, false),)), $this); ?>
-<form class="form-horizontal" id="myform" method="post" action="http://<?php echo $_SERVER['SERVER_NAME']; ?>
-/index/post">
+<form class="form-horizontal" id="myform" method="post">
     <input type="hidden"  class="form-control" name="id"  value="<?php echo ((is_array($_tmp=@$this->_tpl_vars['form_param']->id)) ? $this->_run_mod_handler('default', true, $_tmp) : smarty_modifier_default($_tmp)); ?>
 ">
     <div class="form-group">

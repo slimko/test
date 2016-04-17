@@ -1,4 +1,4 @@
-<form class="form-horizontal" id="myform" method="post" action="http://{$smarty.server.SERVER_NAME}/index/post">
+<form class="form-horizontal" id="myform" method="post">
     <input type="hidden"  class="form-control" name="id"  value="{$form_param->id|default}">
     <div class="form-group">
         <div class="col-sm-offset-4 col-sm-8 radio">

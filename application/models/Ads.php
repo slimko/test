@@ -59,7 +59,7 @@ class Ads extends Model{
     function postAds(){
         if($this->id != null and $this->id!=''){ //проверяем наличие id у формы
             $id = $this->updateBD('ad',$this->getFormParams(),$this->id); //отправляем в базу данных на обновление
-           $result = $this->createResponse($id,'update',$this->getFormParams()); //формируем ответ от сервера
+            $result = $this->createResponse($id,'update',$this->getFormParams()); //формируем ответ от сервера
             echo json_encode($result);
         }
         else{
@@ -67,6 +67,12 @@ class Ads extends Model{
             $result = $this->createResponse($id,'insert',$this->getFormParams()); //формируем ответ от сервера
             return $result;
         }
+
+    }
+    function delAds($id){
+        $result = $this->deleteBD('ad', $id); //возвращает id удаленной записи
+        $result = $this->createResponse($result,'del'); //формируем ответ от сервера
+        echo json_encode($result);
 
     }
 
