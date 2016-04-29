@@ -1,5 +1,5 @@
 <form class="form-horizontal" id="myform" method="post">
-    <input type="hidden"  class="form-control" name="id"  value="{$form_param->id|default}">
+    <input type="hidden"  class="form-control" name="id" id="id" value="{$form_param->id|default}">
     <div class="form-group">
         <div class="col-sm-offset-4 col-sm-8 radio">
             {html_radios name="private" options=$radios checked=$form_param->private|default:1}
@@ -22,7 +22,7 @@
         <div class="col-sm-offset-4 col-sm-8">
             <div class="checkbox">
                 <label>
-                    <input type="checkbox" name="allow_mails" value="1" {if $form_param->allow_mails|default:0 eq '1'}checked{/if}> Я не хочу получать вопросы по объявлению на e-mail
+                    <input type="checkbox" id="allow_mails" name="allow_mails" value="1" {if $form_param->allow_mails|default:0 eq '1'}checked{/if}> Я не хочу получать вопросы по объявлению на e-mail
                 </label>
             </div>
         </div>
@@ -36,7 +36,7 @@
     <div class="form-group">
         <label for="region" class="col-sm-4 control-label">Город</label>
         <div class="col-sm-8">
-            <select name="city" class="form-control">
+            <select name="city" class="form-control" id="city">
                 <option value='null'>-- Выберите город --</option>
                 {html_options options=$options_city selected=$form_param->city|default:''}
                 <option value='1000' {if $form_param->city eq '1000'}selected{/if}>Другой город</option>
@@ -46,7 +46,7 @@
     <div class="form-group">
         <label for="fld_category_id" class="col-sm-4 control-label">Категория</label>
         <div class="col-sm-8">
-            <select name="cat" class="form-control">
+            <select name="cat" class="form-control" id="cat">
                 <option value='null'>-- Выберите категорию --</option>
                 {html_options options=$options_cat selected=$form_param->cat|default:''}
             </select>
@@ -61,7 +61,7 @@
     <div class="form-group">
         <label for="description" class="col-sm-4 control-label">Описание объявления</label>
         <div class="col-sm-8">
-            <textarea maxlength="3000" name="description" for="description" class="form-control" rows="3">{$form_param->description|default:''}</textarea>
+            <textarea maxlength="3000" name="description" for="description" id="description" class="form-control" rows="3">{$form_param->description|default:''}</textarea>
         </div>
     </div>
     <div class="form-group">

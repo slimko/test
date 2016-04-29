@@ -33,6 +33,10 @@ class Ads extends Model{
     public function getFormParams(){
         return array('name' => $this->name, 'private' => $this->private, 'email' => $this->email, 'phone' => $this->phone, 'title_ad' => $this->title_ad, 'price' => $this->price, 'description' => $this->description, 'city' => $this->city, 'allow_mails' => $this->allow_mails, 'cat' =>$this->cat);
     }
+    /**Получение свойств объекта*/
+    public function getParam(){
+        return $this->title_ad;
+    }
 
     /** метод получает массив объектов объявлений или одного объявления */
     public function getAds($id = null){
@@ -41,7 +45,7 @@ class Ads extends Model{
             if($id){
                 $ads = DB::Conn()->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad WHERE id='.$id);
                 $result = new Ads($ads[$id]);
-                return $result;
+                return (get_object_vars($result));
             }else{
                 $ads = DB::Conn()->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad');
 
@@ -65,7 +69,7 @@ class Ads extends Model{
         else{
             $id = $this->postBD('ad', $this->getFormParams()); //отправляем новые данные в базу данных на запись
             $result = $this->createResponse($id,'insert',$this->getFormParams()); //формируем ответ от сервера
-            return $result;
+            echo json_encode($result);
         }
 
     }
@@ -105,12 +109,12 @@ class Ads extends Model{
                 break;
             }
             case "update":{
-                if($id){ //удаляем запись из базы данных
+                if($id){ //обновляем
                     $result['status']='success';
                     $result['message']='Запись №'.$id.' обновлена';
                 }else{
                     $result['status']='error';
-                    $result['message']='Ошибка удаления №'.$id.' обновлена';
+                    $result['message']='Ошибка обновления №'.$id.' обновлена';
                 }
                 return $result;
                 break;

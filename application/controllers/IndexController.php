@@ -26,8 +26,9 @@ class IndexController {
 	/** метод работающий при гет запросе - запросить запись на редактирование  */
 	function getAction(){
 		$id = $this->fc->getParams();//получаем id редактируемой записи
-		$ads = $this->modelAds->getAds($id['id']); //получем объявление для редактирования
-		$this->modelAds->renderForm($ads); // отдаем объект объявления на рендер формы
+		$ads = $this->modelAds->getAds($id['id']); //получем объявление для редактирования;
+
+		$this->modelAds->renderEdit($ads); // отдаем объект объявления на рендер формы
 
 		//$this->fc->setBody($this->modelAds->render($ads,$id['id']));
 			 //выводим пользователю результат (рендерим страницу)

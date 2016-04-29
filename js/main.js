@@ -4,7 +4,7 @@ $(document).ready(function() {
     // post-submit callback
     function showResponse(response)  {
         clearForm();//очистка формы
-        console.dir(response); //консоль
+        console.dir(response+'sdcsc'); //консоль
         if(response.ads){
             $(response.ads).appendTo( "#ads>tbody" );
         }
@@ -84,12 +84,43 @@ $(document).on('click','a.delete',function(){
     $(document).on('click','a.edit',function(){
         var tr = $(this).closest('tr');
         var id = tr.children('td:first').html();
-        $.getJSON('/index/get/id/'+id,
+        $.ajax({
+            type: "POST",
+            data: id,
+            url: "/index/get/id/"+id,
+            dataType: "json",
+            success: function (resp) {
+                console.log(resp);
+                $("#id").val(resp.id);
+                $("#first_name").val(resp.name);
+                $("#email").val(resp.email);
+                $("#fld_phone").val(resp.phone);
+                $("#title_ad").val(resp.title_ad);
+                $("#description").val(resp.description);
+                $("#price").val(resp.price);
+                $("#city [value='"+resp.city+"']").prop("selected", "selected");
+                $("#cat [value='"+resp.cat+"']").prop("selected", "selected");
+                if(resp.allow_mails==1){
+                    $("#allow_mails").prop('checked', 'checked');
+                }else {
+                    $("#allow_mails").prop('checked', false);
+                }
+                if(resp.private==1){
+                    $('input[name=private][value=1]').prop('checked', 'checked');
+                    //$('#colorForm').show();
+                }else if(resp.private==2) {
+                    $('input[name=private][value=2]').prop('checked', 'checked');
+                    //$('#colorForm').hide();
+                }
+            }
+        });
+
+        /*     $.getJSON('/index/get/id/'+id,
             null,
             function (response) {
                 console.dir(response); //консоль
                 $('#forma').html(response);
-/*                tr.fadeOut('slow', function () {
+               tr.fadeOut('slow', function () {
                     var numOfVisibleRows = $('tbody>tr').length; //количество tr
 
                     if(numOfVisibleRows==1){
@@ -102,8 +133,8 @@ $(document).on('click','a.delete',function(){
                     $(this).remove();
                     //очистка формы нашей функцией
                     clearForm();
-                });*/
-            });
+                });
+            });*/
     });
 
 });
