@@ -33,6 +33,9 @@ class Ads extends Model{
     public function getFormParams(){
         return array('name' => $this->name, 'private' => $this->private, 'email' => $this->email, 'phone' => $this->phone, 'title_ad' => $this->title_ad, 'price' => $this->price, 'description' => $this->description, 'city' => $this->city, 'allow_mails' => $this->allow_mails, 'cat' =>$this->cat);
     }
+    public function getid(){
+        return $this->id;
+    }
     /**Получение свойств объекта*/
     public function getParam(){
         return $this->title_ad;
@@ -61,18 +64,19 @@ class Ads extends Model{
 
     /** метод определяет постить или обновлять в базе данные */
     function postAds(){
-        if($this->id != null and $this->id!=''){ //проверяем наличие id у формы
+        if($this->id != null and $this->id!=''){ //проверяем наличие id у формы, если нет, то:
             $id = $this->updateBD('ad',$this->getFormParams(),$this->id); //отправляем в базу данных на обновление
-            $result = $this->createResponse($id,'update',$this->getFormParams()); //формируем ответ от сервера
-            echo json_encode($result);
+            $result = $this->createResponse($this->getid(),'update',$this->getFormParams()); //формируем ответ от сервера
+            return $result;
         }
         else{
-            $id = $this->postBD('ad', $this->getFormParams()); //отправляем новые данные в базу данных на запись
+            $id = $this->postBD('ad', $this->getFormParams()); //отправляем новые данные в базу данных на запись и поучаем id новой записи
             $result = $this->createResponse($id,'insert',$this->getFormParams()); //формируем ответ от сервера
-            echo json_encode($result);
+            return $result;
         }
 
     }
+
     function delAds($id){
         $result = $this->deleteBD('ad', $id); //возвращает id удаленной записи
         $result = $this->createResponse($result,'del'); //формируем ответ от сервера
@@ -86,13 +90,27 @@ class Ads extends Model{
         switch ($method) {
             case "insert": {
                 if ($id) {
-                    $result['status'] = 'success';
+                    $result['status'] = 'insert';
                     $result['ads'] = $data;
                     $result['ads']['id'] = $id;
                     $result['message'] = "Товар #" . $id . " успешно добавлен";
                 } else {
                     $result['status'] = 'error';
                     $result['message'] = "Ошибка обновления или вставки данных";
+                }
+                return $result;
+                break;
+            }
+            case "update":{
+                if($id){ //обновляем
+                    $result['status']='update';
+                    $result['message']='Запись №'.$id.' обновлена';
+                    $result['id'] = $id;
+                    $result['ads'] = $data;
+                    $result['ads']['id'] = $id;
+                }else{
+                    $result['status']='error';
+                    $result['message']='Ошибка обновления №'.$id.' обновлена';
                 }
                 return $result;
                 break;
@@ -104,17 +122,6 @@ class Ads extends Model{
                 }else{
                     $result['status']='error';
                     $result['message']='Ошибка удаления №'.$id.' записи';
-                }
-                return $result;
-                break;
-            }
-            case "update":{
-                if($id){ //обновляем
-                    $result['status']='success';
-                    $result['message']='Запись №'.$id.' обновлена';
-                }else{
-                    $result['status']='error';
-                    $result['message']='Ошибка обновления №'.$id.' обновлена';
                 }
                 return $result;
                 break;

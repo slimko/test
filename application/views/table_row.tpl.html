@@ -2,6 +2,6 @@
     <td>{$ads.id}</td>
     <td>{$ads.title_ad|escape:htmlall:'UTF-8'}</td>
     <td>{$ads.price|escape:htmlall:'UTF-8'} руб.</td>
-    <td><a href="http://{$smarty.server.SERVER_NAME}/index/get/id/{$ads.id}">редактировать</a></td>
+    <td><a class="edit">редактировать</a></td>
     <td><a class="delete btn btn-default">удалить</a></td>
 </tr>
