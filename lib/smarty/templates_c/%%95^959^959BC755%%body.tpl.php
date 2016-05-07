@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2016-04-17 13:05:54
+<?php /* Smarty version 2.6.28, created on 2016-05-07 17:18:01
          compiled from body.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'default', 'body.tpl', 6, false),array('modifier', 'escape', 'body.tpl', 24, false),)), $this); ?>
@@ -30,7 +30,8 @@ unset($_smarty_tpl_vars);
     foreach ($_from as $this->_tpl_vars['nameValue'] => $this->_tpl_vars['Value']):
 ?>
 				<tr>
-					<td><?php echo $this->_tpl_vars['Value']->id; ?>
+					<td number="<?php echo $this->_tpl_vars['Value']->id; ?>
+"><?php echo $this->_tpl_vars['Value']->id; ?>
 </td>
 					<td><?php echo ((is_array($_tmp=$this->_tpl_vars['Value']->title_ad)) ? $this->_run_mod_handler('escape', true, $_tmp, 'htmlall', 'UTF-8') : smarty_modifier_escape($_tmp, 'htmlall', 'UTF-8')); ?>
 </td>

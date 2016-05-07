@@ -15,7 +15,7 @@ class Ads extends Model{
 
 
     public function __construct($ads=null){
-       //parent::__construct();
+        parent::__construct(); //перезагружаем конструктор родителя чтобы получить линк к bd
         /** проходимся по переменным используемых в классе (самописный __set) */
         if($ads!=null) {
             foreach ($ads as $keys => $value){
@@ -31,7 +31,7 @@ class Ads extends Model{
 
     /**  метод получает значения свойств */
     public function getFormParams(){
-        return array('name' => $this->name, 'private' => $this->private, 'email' => $this->email, 'phone' => $this->phone, 'title_ad' => $this->title_ad, 'price' => $this->price, 'description' => $this->description, 'city' => $this->city, 'allow_mails' => $this->allow_mails, 'cat' =>$this->cat);
+        return array('id'=>$this->id,'name' => $this->name, 'private' => $this->private, 'email' => $this->email, 'phone' => $this->phone, 'title_ad' => $this->title_ad, 'price' => $this->price, 'description' => $this->description, 'city' => $this->city, 'allow_mails' => $this->allow_mails, 'cat' =>$this->cat);
     }
     public function getid(){
         return $this->id;
@@ -46,11 +46,12 @@ class Ads extends Model{
         $result = array();
 
             if($id){
-                $ads = DB::Conn()->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad WHERE id='.$id);
+
+                $ads = $this->bd->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad WHERE id='.$id);
                 $result = new Ads($ads[$id]);
                 return (get_object_vars($result));
             }else{
-                $ads = DB::Conn()->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad');
+                $ads = $this->bd->select('SELECT id AS ARRAY_KEY,id,name,email,phone,title_ad,price,description,city,cat,private,allow_mails FROM ad');
 
                 if ($ads != null) {
                     foreach ($ads as $key => $value) {

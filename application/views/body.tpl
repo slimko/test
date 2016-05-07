@@ -20,7 +20,7 @@
 			<tbody>
 			{foreach from=$bd key=nameValue item=Value }
 				<tr>
-					<td>{$Value->id}</td>
+					<td number="{$Value->id}">{$Value->id}</td>
 					<td>{$Value->title_ad|escape:htmlall:'UTF-8'}</td>
 					<td>{$Value->price|escape:htmlall:'UTF-8'} руб.</td>
 					<td><a class="edit">редактировать</a></td>

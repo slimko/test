@@ -31,7 +31,7 @@ function showResponse(response)  {
         $(response.ads).appendTo( "#ads>tbody" );
     }
     if(response.ads && response.status=='update'){
-            $('td:contains('+response.id+')').parent().replaceWith(response.ads);
+        $("td[number="+response.id+"]").parent().replaceWith(response.ads);
     }
 
     if(response.status=='update' || response.status=='insert'){

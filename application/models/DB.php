@@ -1,8 +1,8 @@
 <?php
 class DB{
-	protected $db = NULL;
+	private $db = NULL;
 	private static $instance = NULL;
-	protected $_conf;
+	private $_conf; //конфиг для подключения к бд
 
 	private function __construct(){
 		require_once "./lib/dbsimple/config.php";
@@ -22,6 +22,12 @@ class DB{
 			return $this->db;
 		}
 		$this->db->query("SET NAMES UTF8");
+	}
+	private function __clone() {
+		// ограничивает клонирование объекта
+	}
+	private function __wakeup() {
+		// ограничивает дублирование объекта
 	}
 
 	//обработчик ошибок
